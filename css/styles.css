@@ -10,3 +10,33 @@
 .unsuccess{
     color:rgb(231, 72, 9);
 }
+.add {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.add-delete {
+    background-color: #bd0c0c; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+body{
+    background-color: #2c4e5e;
+}
+.field {
+    background-color: #f1ebeb;
+    border-radius: 20px;
+    padding: 3mm;
+}
+   

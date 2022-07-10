@@ -13,11 +13,13 @@ function createTask(value){
     checkBox.addEventListener('click', (event)=>completeTask(event));
 
     const button = document.createElement('input');
-    button.value = 'удалить';
+    button.value = 'Х';
     button.type = 'button';
+    button.classList.add('add-delete');
+    button.addEventListener('click', (event)=>deleteTask(event));
 
-    task.appendChild(checkBox);
-    task.appendChild(button);
+     task.appendChild(checkBox);
+     task.appendChild(button);
     
     return task;
 };
@@ -41,6 +43,7 @@ function completeTask(event){
         parent.classList.add('unsuccess');
     }
 
+
 }
 button.addEventListener('click', addTask);
 field.addEventListener('keydown', event=>{
@@ -48,3 +51,11 @@ field.addEventListener('keydown', event=>{
         addTask();
     }
 })
+
+function deleteTask(event){
+    const button = event.target;
+    const parent = event.target.parentElement;
+     if (confirm('Удалить задачу')) {
+        parent.remove();
+     }
+}
