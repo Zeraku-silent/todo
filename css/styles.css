@@ -1,0 +1,12 @@
+.task{
+   text-align: center;
+   font-family: "Arial", sans-serif;
+   font-size: x-large;
+}
+.success{
+    color:green;
+    text-decoration:line-through ;
+}
+.unsuccess{
+    color:rgb(231, 72, 9);
+}
