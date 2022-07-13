@@ -11,21 +11,23 @@
  <link rel="stylesheet" href="css/styles.css">
 
  <title>TODO</title>
-<style>
- body {font-family:"KTF Jermilov", serif}
-</style>
 
 </head>
 
-<body> 
+<body>
 
  <div class="block">
 
    <div class="control">
 
-     <input class="field" placeholder="Введи задачу">
+     <input class="field" placeholder="Что добавить?">
 
      <button class="add" type="button">Внести</button>
+     <select class="filter">
+      <option value="task">Все задачи</option>
+      <option value="unsuccess">Только невыполненные</option>
+      <option value="success">Только выполненные</option>
+    </select>
 
    </div>
 

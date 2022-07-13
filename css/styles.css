@@ -39,4 +39,11 @@ body{
     border-radius: 20px;
     padding: 3mm;
 }
+.filter-status1{
+    display: block;
+    
+}
+.filter-status2{
+    display: none;
+}
    

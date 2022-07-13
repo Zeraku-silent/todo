@@ -1,6 +1,7 @@
 const list = document.querySelector('.list');
 const button = document.querySelector('.add');
 const field = document.querySelector('.field');
+const filter = document.querySelector('.filter');
 
 function createTask(value){
     const task  = document.createElement('div');
@@ -59,3 +60,20 @@ function deleteTask(event){
         parent.remove();
      }
 }
+
+filter.addEventListener('change',(event)=>filterTask(event));
+
+function filterTask(){
+    const tasks = document.querySelectorAll(".task");
+    tasks.forEach((task)=> {
+        
+        if (task.classList.contains(filter.value)){
+            task.classList.add('filter-status1');
+            task.classList.remove('filter-status2');
+        } else{
+            task.classList.remove('filter-status1');
+            task.classList.add('filter-status2');
+            }
+    });
+    };
+        
