@@ -3,7 +3,7 @@ const button = document.querySelector('.add');
 const field = document.querySelector('.field');
 const filter = document.querySelector('.filter');
 
-function createTask(value){
+const createTask=(value)=>{
     const task  = document.createElement('div');
     task.textContent = value;
     task.classList.add('task','unsuccess');
@@ -25,7 +25,7 @@ function createTask(value){
     return task;
 };
 
-function addTask(){
+const addTask = ()=>{
     if (field.value !== '' ){
         const zhopa = createTask(field.value);
         list.appendChild(zhopa);
@@ -33,7 +33,7 @@ function addTask(){
     }
 }
 
-function completeTask(event){
+const completeTask = (event)=>{
     const checkBox = event.target;
     const parent = checkBox.parentElement;
     if (checkBox.checked){
@@ -53,7 +53,7 @@ field.addEventListener('keydown', event=>{
     }
 })
 
-function deleteTask(event){
+const deleteTask =(event)=>{
     const button = event.target;
     const parent = event.target.parentElement;
      if (confirm('Удалить задачу')) {
@@ -63,7 +63,7 @@ function deleteTask(event){
 
 filter.addEventListener('change',(event)=>filterTask(event));
 
-function filterTask(){
+const filterTask=()=>{
     const tasks = document.querySelectorAll(".task");
     tasks.forEach((task)=> {
         
@@ -75,5 +75,17 @@ function filterTask(){
             task.classList.add('filter-status2');
             }
     });
-    };
+};
         
+const saveTasks = () => {
+    const [...tasks] = document.querySelectorAll('.task');
+    const boxOfShit = tasks.map((task,index)=>({
+        Id:index,
+        content:task.textContent,
+        isCompleted:task.querySelector('.status').checked}
+));
+
+        const ebalo = JSON.stringify(boxOfShit);
+        localStorage.setItem('task',ebalo);
+    }
+    
