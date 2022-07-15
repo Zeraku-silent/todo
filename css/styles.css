@@ -8,7 +8,7 @@
     text-decoration:line-through ;
 }
 .unsuccess{
-    color:rgb(231, 72, 9);
+    color:red;
 }
 .add {
     background-color: #4CAF50; /* Green */

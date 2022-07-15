@@ -3,6 +3,8 @@ const button = document.querySelector('.add');
 const field = document.querySelector('.field');
 const filter = document.querySelector('.filter');
 
+document.addEventListener('DOMContentLoaded', loadTask);
+
 const createTask=(value)=>{
     const task  = document.createElement('div');
     task.textContent = value;
@@ -30,6 +32,7 @@ const addTask = ()=>{
         const zhopa = createTask(field.value);
         list.appendChild(zhopa);
         field.value = '';
+        saveTasks();
     }
 }
 
@@ -39,9 +42,11 @@ const completeTask = (event)=>{
     if (checkBox.checked){
         parent.classList.remove('unsuccess');
         parent.classList.add('success');
+        saveTasks();
     } else{
         parent.classList.remove('success');
         parent.classList.add('unsuccess');
+        saveTasks();
     }
 
 
@@ -50,6 +55,7 @@ button.addEventListener('click', addTask);
 field.addEventListener('keydown', event=>{
     if (event.keyCode == 13){
         addTask();
+        saveTasks();
     }
 })
 
@@ -58,6 +64,7 @@ const deleteTask =(event)=>{
     const parent = event.target.parentElement;
      if (confirm('Удалить задачу')) {
         parent.remove();
+        saveTasks();
      }
 }
 
@@ -77,7 +84,7 @@ const filterTask=()=>{
     });
 };
         
-const saveTasks = () => {
+function saveTasks() {
     const [...tasks] = document.querySelectorAll('.task');
     const boxOfShit = tasks.map((task,index)=>({
         Id:index,
@@ -88,4 +95,16 @@ const saveTasks = () => {
         const ebalo = JSON.stringify(boxOfShit);
         localStorage.setItem('task',ebalo);
     }
-    
+   
+function loadTask(){
+    const tasks = localStorage.getItem('task');
+    const loadedTasks =JSON.parse(tasks);
+    loadedTasks.forEach(task => {
+        const newTask = createTask(task.content);
+        if (task.isCompleted){
+            newTask.classList.remove('unsuccess');
+            newTask.classList.add('success');
+            newTask.querySelector('.status').checked = true;
+        };
+        list.appendChild(newTask);
+    })}
