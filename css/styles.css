@@ -4,7 +4,7 @@
    font-size: x-large;
 }
 .success{
-    color:green;
+    color: rgb(37, 151, 43);
     text-decoration:line-through ;
 }
 .unsuccess{
@@ -33,6 +33,11 @@
 }
 body{
     background-color: #2c4e5e;
+    background-image: 
+        url("https://p4.wallpaperbetter.com/wallpaper/867/938/404/world-of-warcraft-horde-sign-wallpaper-preview.jpg");
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 .field {
     background-color: #f1ebeb;
@@ -46,4 +51,330 @@ body{
 .filter-status2{
     display: none;
 }
-   
+   /* Светлая тема */
+.light-theme {
+    color: #333333;
+    background-color: #eae9f2;
+  }
+  
+  .light-theme .page-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .light-theme .header-link {
+    color: #6653d9;
+  }
+  
+  .light-theme .header-link::before {
+    background: url("img/arrow-back-light.svg") no-repeat 0 0;
+  }
+  
+  .light-theme .theme-button {
+    color: #6653d9;
+    border: 1px solid #6653d9;
+  }
+  
+  .light-theme .theme-button::before {
+    background-image: url("img/moon-normal.svg");
+  }
+  
+  .light-theme .theme-button:focus,
+  .light-theme .theme-button:hover {
+    color: #ffffff;
+    background-color: #6653d9;
+  }
+  
+  .light-theme .theme-button:focus::before,
+  .light-theme .theme-button:hover::before {
+    background-image: url("img/moon-hover.svg");
+  }
+  
+  .light-theme .menu-open {
+    background-color: #ffffff;
+    background-image: url("img/menu-open-light.svg");
+  }
+  
+  .light-theme .menu-open:focus,
+  .light-theme .menu-open:hover {
+    background-color: #6653d9;
+    background-image: url("img/menu-open-dark.svg");
+  }
+  
+  .light-theme .menu-close {
+    background-color: #6653d9;
+  }
+  
+  .light-theme .menu-close:focus,
+  .light-theme .menu-close:hover {
+    background-color: #473c8d;
+  }
+  
+  .light-theme .main-menu {
+    background-color: #6653d9;
+    color: #ffffff;
+  }
+  
+  .light-theme .main-menu a:focus,
+  .light-theme .main-menu a:hover {
+    background-color: #473c8d;
+  }
+  
+  .light-theme .news-view button {
+    border: 1px solid #6653d9;
+    color: #6653d9;
+  }
+  
+  .light-theme .news-view button:focus,
+  .light-theme .news-view button:hover,
+  .light-theme .news-view button:active,
+  .light-theme .news-view .view-checked {
+    background-color: #6653d9;
+    color: #ffffff;
+  }
+  
+  .light-theme .news-view .row-view:focus::before,
+  .light-theme .news-view .row-view:hover::before,
+  .light-theme .news-view .row-view:active::before {
+    background-image: url("img/rows-light-checked.svg");
+  }
+  
+  .light-theme .news-view .tile-view:focus::before,
+  .light-theme .news-view .tile-view:hover::before,
+  .light-theme .news-view .tile-view:active::before {
+    background-image: url("img/tiles-light-checked.svg");
+  }
+  
+  .light-theme .row-view::before {
+    background-image: url("img/rows-light.svg");
+  }
+  
+  .light-theme .tile-view::before {
+    background-image: url("img/tiles-light.svg");
+  }
+  
+  .light-theme .row-view::before {
+    background-image: url("img/rows-light.svg");
+  }
+  
+  .light-theme .row-view.view-checked::before {
+    background-image: url("img/rows-light-checked.svg");
+  }
+  
+  .light-theme .tile-view.view-checked::before {
+    background-image: url("img/tiles-light-checked.svg");
+  }
+  
+  .light-theme .new-block {
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .light-theme .new-block time {
+    color: #aaaaaa;
+  }
+  
+  .light-theme .cookies-agreement {
+    background-color: #fdeacd;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .light-theme .button {
+    background-color: #6653d9;
+    color: #ffffff;
+  }
+  
+  .light-theme .button:focus,
+  .light-theme .button:hover {
+    background-color: #473c8d;
+  }
+  
+  .light-theme .page-footer {
+    background-color: #6653d9;
+    color: #ffffff;
+  }
+  
+  .light-theme .subscription {
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .light-theme .subscription-message {
+    background-color: #6653d9;
+    color: #eae9f2;
+  }
+  
+  .light-theme .subscription-message::before {
+    background-image: url("img/icon-ok-light.svg");
+  }
+  
+  .light-theme .subscription-label {
+    color: #6653d9;
+  }
+  
+  .light-theme .subscription-email {
+    border-bottom: 1px solid #6653d9;
+    color: #333333;
+  }
+  
+  /* Тёмная тема */
+  .dark-theme {
+    color: #f2f2f2;
+    background-color: #17161a;
+  }
+  
+  .dark-theme .page-header {
+    background-color: #373540;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .dark-theme .header-link {
+    color: #9484f2;
+  }
+  
+  .dark-theme .header-link::before {
+    background: url("img/arrow-back-dark.svg") no-repeat 0 0;
+  }
+  
+  .dark-theme .theme-button {
+    color: #9484f2;
+    border: 1px solid #9484f2;
+  }
+  
+  .dark-theme .theme-button::before {
+    background-image: url("img/sun-normal.svg");
+  }
+  
+  .dark-theme .theme-button:focus,
+  .dark-theme .theme-button:hover {
+    color: #17161a;
+    background-color: #9484f2;
+  }
+  
+  .dark-theme .theme-button:focus::before,
+  .dark-theme .theme-button:hover::before {
+    background-image: url("img/sun-hover.svg");
+  }
+  
+  .dark-theme .menu-open {
+    background-color: #373540;
+    background-image: url("img/menu-open-dark.svg");
+  }
+  
+  .dark-theme .menu-open:focus,
+  .dark-theme .menu-open:hover {
+    background-color: #473c8d;
+    background-image: url("img/menu-open-dark.svg");
+  }
+  
+  .dark-theme .menu-close {
+    background-color: #473c8d;
+  }
+  
+  .dark-theme .menu-close:focus,
+  .dark-theme .menu-close:hover {
+    background-color: #6653d9;
+  }
+  
+  .dark-theme .main-menu {
+    background-color: #473c8d;
+    color: #f2f2f2;
+  }
+  
+  .dark-theme .main-menu a:focus,
+  .dark-theme .main-menu a:hover {
+    background-color: #6653d9;
+  }
+  
+  .dark-theme .news-view button {
+    border: 1px solid #9484f2;
+    color: #9484f2;
+  }
+  
+  .dark-theme .news-view button:focus,
+  .dark-theme .news-view button:hover,
+  .dark-theme .news-view button:active,
+  .dark-theme .news-view .view-checked {
+    background-color: #9484f2;
+    color: #17161a;
+  }
+  
+  .dark-theme .news-view .row-view:focus::before,
+  .dark-theme .news-view .row-view:hover::before,
+  .dark-theme .news-view .row-view:active::before {
+    background-image: url("img/rows-dark-checked.svg");
+  }
+  
+  .dark-theme .news-view .tile-view:focus::before,
+  .dark-theme .news-view .tile-view:hover::before,
+  .dark-theme .news-view .tile-view:active::before {
+    background-image: url("img/tiles-dark-checked.svg");
+  }
+  
+  .dark-theme .row-view::before {
+    background-image: url("img/rows-dark.svg");
+  }
+  
+  .dark-theme .tile-view::before {
+    background-image: url("img/tiles-dark.svg");
+  }
+  
+  .dark-theme .row-view.view-checked::before {
+    background-image: url("img/rows-dark-checked.svg");
+  }
+  
+  .dark-theme .tile-view.view-checked::before {
+    background-image: url("img/tiles-dark-checked.svg");
+  }
+  
+  .dark-theme .new-block {
+    background-color: #2a2930;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .dark-theme .new-block time {
+    color: #888888;
+  }
+  
+  .dark-theme .cookies-agreement {
+    background-color: #473c8d;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .dark-theme .button {
+    background-color: #9484f2;
+    color: #17161a;
+  }
+  
+  .dark-theme .button:focus,
+  .dark-theme .button:hover {
+    background-color: #b6aaff;
+  }
+  
+  .dark-theme .page-footer {
+    background-color: #0a0910;
+    color: #f2f2f2;
+  }
+  
+  .dark-theme .subscription {
+    background-color: #2a2930;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .dark-theme .subscription-message {
+    background-color: #9484f2;
+    color: #17161a;
+  }
+  
+  .dark-theme .subscription-message::before {
+    background-image: url("img/icon-ok-dark.svg");
+  }
+  
+  .dark-theme .subscription-label {
+    color: #9484f2;
+  }
+  
+  .dark-theme .subscription-email {
+    border-bottom: 1px solid #9484f2;
+    color: #f2f2f2;
+  }
