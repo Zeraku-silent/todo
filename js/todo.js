@@ -106,5 +106,7 @@ function loadTask(){
             newTask.classList.add('success');
             newTask.querySelector('.status').checked = true;
         };
+        newTask.classList.add('task');
         list.appendChild(newTask);
     })}
+    
